@@ -1,0 +1,62 @@
+
+@media screen and (max-width: 768px) {
+
+ .infoScreen p{
+    width:90%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.7;
+
+}
+.closeInfo img, .back img{
+	width: 60px ;
+}
+
+}
+@media screen and (max-width:500px) {
+.guess {
+	width:150px !important;
+    height:180px;
+}
+.title {
+
+	height: 110px;
+   	background-image:url("../images/Doom.png") !important;
+    background-repeat: no-repeat;
+  
+  
+}
+.imgButton,.imgButton img {
+
+	width:100px;
+	height: 81px;
+	margin-top:30px !important;
+}
+
+.openinfo{
+	margin-top:110px !important;
+}
+.vite{
+	float:left !important;
+	margin-left:40px !important;
+}
+
+.uno{
+	float:left !important;
+}
+.due{
+	float:right !important;
+}
+
+.teschio img{
+	width:70% ;
+}
+
+.sfera img{
+	width:50px !important;
+	height: 50px !important;
+}
+
+
+}

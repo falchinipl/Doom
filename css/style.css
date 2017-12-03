@@ -1,0 +1,173 @@
+.guess {
+    
+    width:150px;
+    margin:auto !important;
+    margin-top: 8vh !important;
+
+   
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+
+#dial1{
+
+}
+#dial2{
+ 
+    display: none;
+}
+.soulbutton{
+
+    position: absolute;
+    left:3%;
+   
+}
+.soulbutton img{
+ width:70px;
+    height: 70px;
+}
+.red { 
+    color: #e30000 !important; }
+.yellow{
+    color: #d69e17 !important;
+}
+.blue{
+    color: blue !important;
+}
+.green{
+    color: #42c852 !important;
+}
+
+
+
+.imgButton{
+
+    padding:0 !important;
+    margin: 0!important;
+   display: block;
+    margin:auto !important;
+
+
+
+}
+
+.topMargin{
+    margin-top:30px !important;
+}
+.deathScreen{
+    position: absolute;
+  
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+.none{
+    display: none !important;
+}
+.block{
+    display: block !important;
+}
+.back{
+    display: none;
+
+    
+}
+.vite{
+    float:right;
+    font-size: 35px;
+    font-family: 'crimes_times_sixregular' !important;
+   margin-right: 30px;
+   margin-top:0 !important;
+}
+.killed{
+    text-align: center;
+    padding-top: 7vh !important;
+     font-family: 'crimes_times_sixregular';
+     font-size: 50px !important;
+     color:#e30000 !important;
+}
+.teschio{
+   display: block;
+    margin: auto !important;
+
+
+}
+.sfera{
+    display:none;
+}
+.infoScreen p{
+    width:60%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.2;
+
+}
+.infoScreen{
+display: none;
+    font-family:  'yoster_islandregular';
+    height: 100vh !important;
+
+
+}
+.flex{
+    height: 70%;
+
+      align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.button{
+
+    display: block;
+    margin: auto !important;
+   
+ 
+
+    color:#fff;
+
+
+}
+
+
+.death{
+    width:200px;
+    height: 200px;
+    margin: auto !important;
+    margin-top:10vh !important;
+    margin-bottom: 10vh !important;
+}
+.doom{
+    width:250px ;
+}
+
+.title {
+    margin-top:20px;
+   background-position: center;
+    padding-bottom: 4vh;
+   background-image: url("../images/Doom1.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 180px;
+}
+.openinfo{
+    float: right;
+    margin-right: 20px;
+    margin-top:40px;
+
+}
+.closeinfo{
+
+    margin-left: 50px;
+
+}
+body {
+    background-image:url("../images/Deimos.jpg");
+    background-size: cover;
+    margin: 0 !important;
+    color:white;
+}

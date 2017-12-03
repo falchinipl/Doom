@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Doom</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet2.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body ng-app="PierluigiApp" ng-controller="GameController">
+<div class="deathScreen">
+<h2 class="center killed">
+	sei stato ucciso	
+</h2>
+	<div class="death">
+		
+	</div>
+<button class="button back" ng-click="back()">
+	<img src="images/evileye1.png">
+</button>
+</div>
+
+<div class="infoScreen">
+<div class="flex">
+	<p>
+		Clicca sui mostri per ucciderli e sui kit medici per incrementare la tua vita. Il kit medico grande fornisce 25 punti vita, mentre quello piccolo 10.
+		La sfera blu che appare sporadicamente nella schermata di gioco incrementa temporaneamente la vita massima di 100 punti. Hai a disposizione 5 tentativi
+		prima di morire definitivamente.
+	</p>
+	
+	</div>
+<button class="closeinfo" ng-click="closeInfo()">
+	<img src="images/evileye1.png">
+</button>
+</div>
+
+
+<div class="wrapper">
+<div class="title">
+<button class="openinfo" ng-click="openInfo()"><img src="images/evileye2.png"></button>
+	
+</div>
+<button class="sfera soulbutton" ng-click = "sfera()">
+	<img src="images/Soul_sphere.gif">
+</button>
+<div class="vite">{{vite}}
+	
+</div>	
+	<div class="guess " id="dial1">
+	<input class="dial" id="input1" 
+	data-width="150" 
+	data-min="0"
+	data-readOnly= "true"
+	data-displayprevious="true" 
+	value={{health}}
+	data-width="150"
+    data-fgColor="#42c852"
+    data-skin="tron"
+    data-thickness=".3"
+    data-displayPrevious=false
+    ng-model="health" >
+		
+	</div>
+	<div class="guess" id="dial2">
+	<input class="dial" id="input2" 
+	data-width="150" 
+	data-min="0"
+	data-readOnly= "true"
+	data-displayprevious="true" 
+	value={{health}}
+	data-width="150"
+    data-fgColor="#42c852"
+    data-skin="tron"
+    data-thickness=".3"
+    data-displayPrevious=false
+    ng-model="health" >
+		
+	</div>
+ 
+
+
+	<div>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+		<button class="teschio spawn" ng-click="monsterChosen()" ng-disabled="isDisabled">
+			<img src="images/teschio.png">
+		</button>
+		</div>
+
+	</div>
+	<div class="row topMargin">
+		<div class="col-xs-6">
+		<div class="correctLetter margin">
+			
+			
+				
+			
+		</div>
+		</div>
+		<div class="col-xs-6">
+		<div class="incorrectLetter margin">
+		
+		 	
+
+		</div>
+		</div>
+		</div>
+	
+</div>
+
+
+	
+</div>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/knob.min.js"></script>
+
+</body>
+
+
+</html>
